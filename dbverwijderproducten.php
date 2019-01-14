@@ -1,16 +1,14 @@
 <?php
-$productnaam = $_POST['productnaam'];
-$productprijs = $_POST['productprijs'];
+$productid = $_GET['productid'];
 
-try{
+try{ 
 $conn = new PDO("mysql:host=localhost;dbname=webshopdb", "root", "");
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$stmt = $conn->prepare("INSERT INTO producten (naam, prijs) VALUES (:fnaam, :fprijs)");
+$stmt = $conn->prepare("DELETE FROM producten WHERE ID = :fid");
 
 $stmt->execute([
-    'fnaam' => $productnaam,
-    'fprijs' => $productprijs
+    'fid' => $productid,
 ]);
 
 }
