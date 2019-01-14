@@ -1,8 +1,8 @@
-<h1>Welkom op mijn shop</h1>
+<h1>Welkom in de groentewinkel</h1>
 
 <ul>
     <li><a href="producttoevoegen.html">product toevoegen</a></li>
-    <li>menu item</li>
+    <li><a href="productbewerken.html">product wijzigen</a></li>
     <li>menu item</li>
 </ul>
 
