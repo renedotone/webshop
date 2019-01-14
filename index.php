@@ -2,7 +2,7 @@
 
 <ul>
     <li><a href="producttoevoegen.html">product toevoegen</a></li>
-    <li><a href="productbewerken.html">product wijzigen</a></li>
+    <li><a href="toonbestellingen.php">Bestellingen</a></li>
     <li>menu item</li>
 </ul>
 
