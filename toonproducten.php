@@ -6,7 +6,10 @@ try{
 
     $stmt = $conn->query("SELECT * FROM producten");
     while ($row = $stmt->fetch()) {
-        echo "<LI>" . $row['naam'] . " : " . $row['prijs'] ." ". "<a href='dbproductverwijderen.php?productid=" . $row['id'] . "'>Verwijder</a></LI>";
+        echo "<LI>" . $row['naam'] . " : " . $row['prijs'] ." ";
+        echo "<a href='dbproductverwijderen.php?productid=" . $row['id'] . "'>Verwijder</a>" . " ";
+        echo "<a href='productbewerken.php?productid=" . $row['id'] . "'>Wijzigen</a>"; 
+        echo "</LI>";
     }
 
 }
