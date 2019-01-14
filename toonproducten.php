@@ -23,7 +23,8 @@ try{
     while ($row = $stmt->fetch()) {
         echo "<LI>" . $row['naam'] . " : " . $row['prijs'] ." ";
         echo "<a href='dbproductverwijderen.php?productid=" . $row['id'] . "'>Verwijder</a>" . " ";
-        echo "<a href='productbewerken.php?productid=" . $row['id'] . "'>Wijzigen</a>"; 
+        echo "<a href='productbewerken.php?productid=" . $row['id'] . "'>Wijzigen</a>" . " "; 
+        echo "<a href='koopproduct.php?productid=" . $row['id'] . "'>Kopen</a>"; 
         echo "</LI>";
     }
 

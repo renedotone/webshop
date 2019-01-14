@@ -12,3 +12,10 @@
 <?php
     include ('toonproducten.php');
 ?>
+
+<br><br>
+<h2>Alle Bestellingen</h2>
+
+<?php
+  include("toonbestellingen.php");
+?>
