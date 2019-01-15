@@ -3,7 +3,7 @@
 <ul>
     <li><a href="producttoevoegen.html">product toevoegen</a></li>
     <li><a href="toonbestellingen.php">Bestellingen</a></li>
-    <li>menu item</li>
+    <li><a href="klanttoevoegen.html">Klant worden</a></li>
 </ul>
 
 <br><br>
